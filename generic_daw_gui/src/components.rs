@@ -1,6 +1,6 @@
 use crate::{
 	components::drag_handle::drag_handle,
-	icons::{Icon, LUCIDE_FONT, chevron_down, chevron_up, rotate_ccw},
+	icons::{Icon, chevron_down, chevron_up, rotate_ccw},
 	stylefns::{button_with_radius, container_with_radius, weaker_bordered_box},
 	widget::{LINE_HEIGHT, TEXT_HEIGHT},
 };
@@ -94,14 +94,14 @@ pub fn number_input<'a>(
 pub fn pick_list_handle() -> pick_list::Handle {
 	pick_list::Handle::Dynamic {
 		closed: pick_list::Icon {
-			font: LUCIDE_FONT,
+			font: Font::DEFAULT,
 			code_point: chevron_down().glyph(),
 			size: None,
 			line_height: None,
 			shaping: text::Shaping::Basic,
 		},
 		open: pick_list::Icon {
-			font: LUCIDE_FONT,
+			font: Font::DEFAULT,
 			code_point: chevron_up().glyph(),
 			size: None,
 			line_height: None,

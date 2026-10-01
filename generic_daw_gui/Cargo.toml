@@ -41,6 +41,3 @@ sweeten = { git = "https://github.com/edwloef/sweeten.git", branch = "generic-da
 toml = "1.1.6"
 unicode-segmentation = "1.13.3"
 walkdir = "2.5.0"
-
-[build-dependencies]
-font-subset = "0.1.0"

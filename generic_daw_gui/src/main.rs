@@ -2,7 +2,6 @@
 
 use daw::{CRASHES_DIR, Daw, format_now};
 use iced::{Result, daemon};
-use icons::LUCIDE_BYTES;
 use log::LevelFilter;
 use state::State;
 use std::{backtrace::Backtrace, fs::File, io::Write as _, sync::Arc};
@@ -37,7 +36,6 @@ fn main() -> Result {
 		.theme(Daw::theme)
 		.scale_factor(Daw::scale_factor)
 		.subscription(Daw::subscription)
-		.font(LUCIDE_BYTES)
 		.run()
 }
 

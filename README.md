@@ -35,7 +35,6 @@ Run the following shell commands to clone the source code and compile a release 
 ```
 git clone https://github.com/generic-daw/generic-daw.git
 cd generic-daw
-curl https://unpkg.com/lucide-static@latest/font/Lucide.ttf -Lo Lucide.ttf
 cargo build --release
 ```
 
